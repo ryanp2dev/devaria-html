@@ -9,24 +9,30 @@
     <meta name="author" content="Ryan Padilha" />
     <meta http-equiv="Refresh" Content="300" />
     <title>Devaria</title>
+    <link rel="stylesheet" href="public/css/devaria.css">
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/footer.css">
 </head>
 <body>
     <header>
-        <h1>Ola Mundo! Essa e a minha primeira pagina da Web</h1>
-        <nav>
+        <a href="index.html" class="link-logo">
+            <img src="public/assets/imgs/logo.svg" alt="Logo da Devaria">
+        </a>
+        <nav class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="professores.html">Professores</a></li>
                 <li><a href="faleConosco.html">Fale Conosco</a></li>
                 <li><a href="devStars.html">DevStars</a></li>
-
+                
             </ul>
         </nav>
     </header>
     <main>
-        <section> 
+        <h1 class="title">Ola Mundo! Essa e a minha primeira pagina da Web</h1>
+        <section class="cover-container"> 
             <figure>
-            <img src="./assets/imgs/fotohome.png" width="500" alt="Devaria - olá Mundo!" >   
+            <img src="./public/assets/imgs/fotohome.png" width="500" alt="Devaria - olá Mundo!" >   
             <figcaption>Foto de capa devaria</figcaption>
             </figure>
         </section>
@@ -38,7 +44,7 @@
         </section> -->
 
         <video width="320" height="240" controls="controls">
-            <source src="assets/video/anuncio.mp4" type="video/mp4">
+            <source src="./public/assets/video/anuncio.mp4" type="video/mp4">
         </video>
 
         <section>
@@ -47,8 +53,10 @@
         </section>
     </main>
     <footer>
-        <span>contato@devaria.com.br</span><br>
-        <span>Conheça o nosso canal do Youtube</span>
+        <section>
+            <span>contato@devaria.com.br</span><br>
+            <span>Conheça o nosso canal do Youtube</span>
+        </section>
     </footer>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <title>Fale Conosco</title>
     <link rel="stylesheet" href="public/css/devaria.css">
     <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/faleConosco.css">
     <link rel="stylesheet" href="public/css/footer.css">
 
 </head>
@@ -24,24 +25,25 @@
         </nav>
     </header>
     <main>
-        <h2>Para mandar uma mensagem para Devaria preecha abaixo e clique em envia:</h2>
-        <form action="index.html">
-            <p>
-                <label for="">Nome:</label><input type="text" name="Nome" id="">
-            </p>
-            <p>
+        <h1 class="title text-center">Fale com a devaria atraves dessa pagina </h1>
+        <h2 class="sub-title text-center">Para entrar em contato preencha os campos abaixo e clique em emviar</h2>
+        <form action="index.html" class="contact-form margin-horizintal ">
+            <div>
+            <label for="">Nome:</label><input type="text" name="Nome" id="">
+            </div>
+            <div>
                 <label for="">Email:</label><input type="email" name="Email">
-            </p>
-           <p>
+            </div>
+           <div>
             <label for="">Comentário:</label>
-            <textarea name="Comentario" id="" cols="50" rows="4"></textarea>
-           </p>
-           <p>
+            <textarea name="Comentario" id="" ></textarea>
+           </div>
+           <div>
             <label for="">Sexo:</label>
-            <input type="radio" name="Sexo" id=""><label for="">Feminino</label>
-            <input type="radio" name="Sexo" id=""><label for="">Masculino</label>
-           </p>
-           <p>
+            <input type="radio" name="Sexo" id=""><span>Feminino<span>
+            <input type="radio" name="Sexo" id=""><span>Masculino<span>
+           </div>
+           <div>
             <label for="">Aonde nos conheceu?</label>
             <select name="Connheceu" id="">
                 <option selected value="">Youtube</option>
@@ -50,14 +52,15 @@
                 <option value="">Outros</option>
 
             </select>
-           </p>
-           <p>
+        </div>
+           <div>
             <input type="checkbox" name="Novidades" value="Aceite" id="">
-           </p>
-           <p>
+            <span>Aceito receber Novidades</span>
+           </div>
+           <div>
             <input type="submit" value="Enviar" name="Enviar">
             <input type="reset" name="Limpar" value="Limpar">
-           </p>
+           </div>
         </form>
 
     </main>
